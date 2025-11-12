@@ -1,6 +1,6 @@
 # CIFAR-10 Optimizer Benchmark
 
-This project benchmarks the performance of several optimizers (Adam, Muon, Scion, and Dion) on the CIFAR-10 dataset, using both ResNet-18 and a small Vision Transformer (ViT) model. 
+This project benchmarks the performance of several optimizers (Adam, Muon, Scion, and Dion) on the CIFAR-10 dataset, using both ResNet-18 and a small Vision Transformer (ViT) model. Group project for "EE556 - Mathematics of Data" EPFL course.
 
 ## Setup and Usage
 
@@ -66,4 +66,5 @@ The following plots show the training loss and validation accuracy versus the nu
 -   **Muon** shows a trade-off between more expensive updates and good conditioning, with expected gains in longer runs or larger models.
 -   **Dion** is optimized for synchronous, communication-efficient training at scale and its performance is not fully exercised in this single-GPU setup.
 -   **Adam** remains a strong general-purpose baseline, particularly for the small ViT.
+
 
