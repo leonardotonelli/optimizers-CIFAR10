@@ -36,6 +36,17 @@ To reproduce the results, follow these steps:
 
     Run the `main.ipynb` notebook to generate a summary of the results and the comparison plots.
 
+## Repository Structure
+
+*   `main.ipynb`: A Jupyter Notebook to visualize the training results and generate plots.
+*   `training.py`: The main script for training the models.
+*   `requirements.txt`: A list of the Python dependencies required to run the project.
+*   `models/`: Contains the ResNet and ViT model definitions.
+*   `optimizers/`: Contains the implementations of the custom optimizers.
+*   `utils/`: Contains utility functions for data loading and other miscellaneous tasks.
+*   `report/`: Contains the output plots from the analysis.
+*   `results/`: The default directory where training logs and summaries are saved.
+
 ## Results
 
 The following plots show the training loss and validation accuracy versus the number of epochs for each optimizer and model.
