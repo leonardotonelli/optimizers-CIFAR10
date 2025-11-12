@@ -1,0 +1,9 @@
+model,optimizer,best_val_acc_%,total_time_sec,batch_size,weight_decay,momentum,lr_used,seed,amp,source,time_to_60%_sec,time_to_70%_sec,time_to_85%_sec
+resnet,adam,93.84,1870.9651408195496,1024,0.0005,0.9,0.001,42,True,./results\resnet_adam\summary_resnet_adam.json,105.00832772254944,153.38595747947693,519.770236492157
+resnet,dion,87.77,1816.8475325107574,1024,0.0005,0.9,0.03,42,True,./results\resnet_dion\summary_resnet_dion.json,272.3305506706238,422.0528049468994,1281.149420261383
+resnet,muon,93.96,2497.049947977066,1024,0.0005,0.9,0.03,42,True,./results\resnet_muon\summary_resnet_muon.json,120.99870038032532,217.42294931411743,564.7424356937408
+resnet,scion,94.27,1544.572818994522,1024,0.0005,0.9,0.03,42,True,./results\resnet_scion\summary_resnet_scion.json,130.56583523750305,177.3720600605011,499.23982763290405
+vit,adam,82.18,1842.6249146461487,1024,0.0005,0.9,0.001,42,True,./results\vit_adam\summary_vit_adam.json,297.6404662132263,555.5730047225952,
+vit,dion,62.42,1644.72385263443,1024,0.0005,0.9,0.03,42,True,./results\vit_dion\summary_vit_dion.json,1065.891527891159,,
+vit,muon,75.36,1973.9869837760925,1024,0.0005,0.9,0.03,42,True,./results\vit_muon\summary_vit_muon.json,563.9225690364838,1066.298136472702,
+vit,scion,78.68,1133.0981810092926,1024,0.0005,0.9,0.03,42,True,./results\vit_scion\summary_vit_scion.json,249.4133336544037,495.87408804893494,
