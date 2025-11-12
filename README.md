@@ -1,6 +1,6 @@
 # CIFAR-10 Optimizer Benchmark
 
-This project benchmarks the performance of several optimizers (Adam, Muon, Scion, and Dion) on the CIFAR-10 dataset, using both ResNet-18 and a small Vision Transformer (ViT) model.
+This project benchmarks the performance of several optimizers (Adam, Muon, Scion, and Dion) on the CIFAR-10 dataset, using both ResNet-18 and a small Vision Transformer (ViT) model. 
 
 ## Setup and Usage
 
@@ -16,7 +16,8 @@ To reproduce the results, follow these steps:
 
 2.  **Run the training scripts:**
 
-    The following commands were used to train the models. Each command trains a specific model with a specific optimizer for 80 epochs with mixed precision.
+    The following commands were used to train the models. Each command trains a specific model with a specific optimizer for 80 epochs with mixed precision. Default hyperparameters can be seen Args dataclass in `training.py`.
+    We reccomend using less amount of epochs if running on a standard machine. We conducted our experiment with 80 epochs, that took around 2 hours on NVIDIA RTX5090.
 
     ```bash
     # ResNet18 + Optimizers
@@ -32,7 +33,7 @@ To reproduce the results, follow these steps:
     python training.py --model vit --opt scion --epochs 80 --amp --out_dir ./results/vit_scion
     ```
 
-3.  **Generate the summary and plots:**
+4.  **Generate the summary and plots:**
 
     Run the `main.ipynb` notebook to generate a summary of the results and the comparison plots.
 
@@ -65,3 +66,4 @@ The following plots show the training loss and validation accuracy versus the nu
 -   **Muon** shows a trade-off between more expensive updates and good conditioning, with expected gains in longer runs or larger models.
 -   **Dion** is optimized for synchronous, communication-efficient training at scale and its performance is not fully exercised in this single-GPU setup.
 -   **Adam** remains a strong general-purpose baseline, particularly for the small ViT.
+
